@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(images/desktop-wallpaper-by-greg-bemis-shillington-graduate-shillington-design-blog-rock-paper-scissors.jpg);
+}
+
+.result_images img{
+    width: 100px;
+    filter: hue-rotate(265deg) saturate(150%) brightness(1.4) contrast(1);
+
+
+}
+
+.result_images .user_result{
+    transform: rotate(90deg);
+}
+.result_images .cpu_result{
+    transform: rotate(-90deg) rotateY(180deg);
+}
+
+.result_images{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container{
+    padding: 100px 60px;
+    margin: auto ;
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.911);
+    border-radius: 10px;
+    box-shadow: 5px 10px 10px rgba(168, 168, 168, 0.747);
+}
+
+
+.result{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    color: rgb(0, 196, 179);
+    font-weight: 400;
+}
+
+.option_image img{
+    width: 50px;
+    filter: hue-rotate(265deg) saturate(150%) brightness(1.4) contrast(1);
+    pointer-events: none;
+
+}
+
+.option_image{
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    opacity: 0.5;
+    transition: opacity ease 0.3s;
+    cursor: pointer;
+}
+
+.option_image:hover{
+    opacity: 1;
+}
+
+
+.option_image p{
+    color:rgb(0, 196, 179) ;
+    font-weight: 400;
+    font-size: larger;
+    pointer-events: none;
+}
+
+.option_images{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
