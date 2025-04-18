@@ -75,6 +75,10 @@ body{
     opacity: 1;
 }
 
+.option_image.active{
+    opacity: 1;
+}
+
 
 .option_image p{
     color:rgb(0, 196, 179) ;
